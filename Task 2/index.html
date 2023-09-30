@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <h1>Background Color Generator</h1>
+        <div class="color-box" id="colorBox">
+            <p id="colorCode">#FFFFFF</p>
+        </div>
+        <button id="generateButton">Generate Color</button>
+        <div class="custom-color">
+            <label for="red">Red:</label>
+            <input type="range" id="red" min="0" max="255" value="255">
+            <label for="green">Green:</label>
+            <input type="range" id="green" min="0" max="255" value="255">
+            <label for="blue">Blue:</label>
+            <input type="range" id="blue" min="0" max="255" value="255">
+        </div>
+        <input type="text" id="customColorCode" readonly>
+        <button id="copyButton">Copy Color Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
